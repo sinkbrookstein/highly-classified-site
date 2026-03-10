@@ -1,0 +1,32 @@
+{
+  "performances": [
+    {
+      "title": "TiME",
+      "image": "/images/time.png",
+      "description": "TiME began before the seas, but from the seas all life came.",
+      "details": "Denver Fringe Festival 2025",
+      "showtimes": ["2024-06-06T17:00:00", "2024-07-08T21:30:00", "2024-06-08T18:30:00"],
+      "tickets": null
+    }, {
+      "title": "Cirque du Cinema",
+      "image": "/images/cirque-du-cinema.png",
+      "description": "Your favorite Hollywood classics reimagined to the aerial stage.",
+      "details": "Denver Fringe Festival 2024",
+      "showtimes": ["2024-06-07T17:00:00", "2024-06-08T18:30:00", "2024-06-09T18:00:00"],
+      "tickets": null
+    }, {
+      "title": "Emo Nite",
+      "image": "/images/emo-nite.png",
+      "description": "It was never a phase. Rawr XD",
+      "showtimes": ["2023-04-29T20:00:00"],
+      "tickets": null
+    }, {
+      "title": "Monster Story",
+      "image": "/images/monster-story.png",
+      "description": "Embrace your inner monster.",
+      "details": "Denver Fringe Festival 2026",
+      "showtimes": ["TBD"],
+      "tickets": null
+    }
+  ]
+}

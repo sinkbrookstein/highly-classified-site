@@ -1,0 +1,38 @@
+.auditions-container {
+    max-width: 100%;
+}
+
+.auditions-blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.auditions-blurb h2 {
+  color: #d4af37;
+}
+
+.auditions-blurb p {
+    padding: 0 50px;
+}
+
+.auditions-image {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form a {
+  font-size: 1.2rem;
+  max-width: 700px;
+  color: #d4af37;
+}
+
+.form a:hover {
+  font-size: 1.21rem;
+}
