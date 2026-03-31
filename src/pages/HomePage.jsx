@@ -75,7 +75,8 @@ function HireUsBlurb() {
         <ul className="services-list">
             <li>✨ <a className="list-link"><Link to="/performances">Aerial Stage Performances</Link></a></li>
             <li>✨ <a className="list-link"><Link to="/hire-us">Hire Us for your private event</Link></a></li>
-            <li>✨ <a className="list-link"><Link to="/gallery">See our Gallery</Link></a></li>
+            {/*<li>✨ <a className="list-link"><Link to="/gallery">See our Gallery</Link></a></li>*/}
+            <li>✨ <a className="list-link"><Link to="/donations">Donations</Link></a></li>
         </ul>
     </div>
 }

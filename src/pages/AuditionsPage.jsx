@@ -10,7 +10,7 @@ const AuditionsPage = () => {
         </div>
     )
 };
-
+//TODO - future proof this so Coco can put in her own forms for auditions
 function AuditionsBlurb() {
     return <div className="auditions-blurb">
         <h2>Want to join us?</h2>

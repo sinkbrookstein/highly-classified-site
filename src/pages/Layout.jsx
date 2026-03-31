@@ -45,10 +45,11 @@ function Navbar() {
                 <ul>
                     <li><Link to="/about" onClick={closeMenu}>About</Link></li>
                     <li><Link to="/performances" onClick={closeMenu}>Performances</Link></li>
-                    <li><Link to="/hire-us" onClick={closeMenu}>HireUs</Link></li>
+                    <li><Link to="/hire-us" onClick={closeMenu}>Hire Us</Link></li>
                     <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
-                    <li><Link to="/auditions" onClick={closeMenu}>Auditions</Link></li>
-                    <li><Link to="/gallery" onClick={closeMenu}>Gallery</Link></li>
+                    {/*<li><Link to="/auditions" onClick={closeMenu}>Auditions</Link></li>*/}
+                    {/*<li><Link to="/gallery" onClick={closeMenu}>Gallery</Link></li>*/}
+                    <li><Link to="/donations" onClick={closeMenu}>Donations</Link></li>
                 </ul>
             </aside>
         </>

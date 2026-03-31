@@ -63,3 +63,22 @@
         flex-direction: column;
     }
 }
+
+
+/*TEMPORARY STYLING UNTIL PACKAGES EXIST*/
+.hire-us-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.hire-us-info h2 {
+    color: #d4af37;
+}
+
+.temp-image {
+    width: 35%;
+    padding-bottom: 20px;
+}

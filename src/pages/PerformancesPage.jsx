@@ -24,6 +24,17 @@ function isLatestShowPast(showtimes) {
     return latest < new Date();
 }
 
+function getReadableDate(date) {
+    if (date === "TBD") {return date}
+    const options = {
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit'
+    };
+    return new Date(date).toLocaleString('en-US', options);
+}
+
 function UpcomingPerformances() {
     const upcoming = data.performances.filter(p => !isLatestShowPast(p.showtimes));
     //TODO - handle the case if there are no upcoming performances.
@@ -39,7 +50,7 @@ function UpcomingPerformances() {
                     <p>{performance.details}</p>
                     <div className="showtimes-container">
                         <p className="showtimes">Show times: </p>
-                        {performance.showtimes.map(showtime => (<p>{showtime}</p>))}
+                        {performance.showtimes.map(showtime => (<p>{getReadableDate(showtime)}</p>))}
                     </div>
                     {performance.tickets && (
                         <a
@@ -49,6 +60,9 @@ function UpcomingPerformances() {
                         >
                             Tickets
                         </a>
+                    )}
+                    {performance.venmo && (
+                        <p className="showtimes">venmo: {performance.venmo}</p>
                     )}
                 </div>
             </div>

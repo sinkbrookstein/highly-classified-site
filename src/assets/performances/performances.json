@@ -21,10 +21,18 @@
       "showtimes": ["2023-04-29T20:00:00"],
       "tickets": null
     }, {
+      "title": "Circus Game Show",
+      "image": "/images/circus_gameshow_2.jpg",
+      "description": "Improvised aerial game show",
+      "details": "Fundraiser for Monster Story",
+      "showtimes": ["2026-04-18T19:00:00"],
+      "tickets": null,
+      "venmo": "@CourtneyDayOC"
+    }, {
       "title": "Monster Story",
       "image": "/images/monster-story.png",
       "description": "Embrace your inner monster.",
-      "details": "Denver Fringe Festival 2026",
+      "details": "Denver and Fort Collins Fringe Festival 2026",
       "showtimes": ["TBD"],
       "tickets": null
     }

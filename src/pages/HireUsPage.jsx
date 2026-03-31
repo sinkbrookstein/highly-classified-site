@@ -1,16 +1,33 @@
 import '../styles/HireUsPage.css';
 import placeholderImage from '../assets/placeholder.png';
+import tempImage from '../assets/gallery/lisa-sling-ambient.jpg';
 import {Link} from 'react-router-dom';
 import Footer from "../components/Footer.jsx";
 
 const HireUsPage = () => {
     return (
         <div className="hire-us-container">
-            <Packages/>
+            {/*<Packages/> This will be added later, for now putting in temporary blurb*/}
+            <HireUsInfo/>
             <Footer/>
         </div>
     )
 };
+
+function HireUsInfo() {
+    return <div className="hire-us-info">
+        <h2>Hire Us</h2>
+        <img src={tempImage} alt="Hire Us" className="temp-image"/>
+        <p>
+            You may know Highly Classified for our high-flying stage performances, but we do so much more!
+            Our troupe is available for private or corporate events and ambient shows. We have performed
+            at functions such as the First Fridays in the Santa Fe art district and aerial champagne service
+            at weddings. If you are interested in booking Denver's most diverse aerial talent for your event, or
+            have any inquiries please contact us!
+        </p>
+        <a className="link"><Link to="/contact">contact us</Link></a>
+    </div>
+}
 
 function Packages() {
     return <div className="packages-container">

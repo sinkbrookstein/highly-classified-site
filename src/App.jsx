@@ -8,6 +8,7 @@ import Layout from "./pages/Layout.jsx";
 import AuditionsPage from "./pages/AuditionsPage.jsx";
 import HireUsPage from "./pages/HireUsPage.jsx";
 import GalleryPage from "./pages/GalleryPage.jsx";
+import DonationsPage from "./pages/DonationsPage.jsx";
 import ScrollToTop from './components/ScrollToTop.jsx';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
                     <Route path="contact" element={<ContactPage/>}/>
                     <Route path="auditions" element={<AuditionsPage/>}/>
                     <Route path="gallery" element={<GalleryPage/>}/>
+                    <Route path="donations" element={<DonationsPage/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
