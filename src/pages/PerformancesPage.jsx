@@ -36,13 +36,18 @@ function getReadableDate(date) {
 }
 
 function UpcomingPerformances() {
+    const images = Object.values(
+        import.meta.glob("../assets/performances/images/*.{jpg,jpeg,png,webp}", {
+            eager: true, query: '?url', import: 'default'
+        })
+    );
     const upcoming = data.performances.filter(p => !isLatestShowPast(p.showtimes));
     //TODO - handle the case if there are no upcoming performances.
     return <div className="upcoming-performances">
         {upcoming.map(performance => (
             <div className="performance">
                 <div className="performance-image">
-                    <img src={"/src/assets/performances" + performance.image} alt={performance.title}/>
+                    <img src={images.find(i => i.includes(performance.image))} alt={performance.title}/>
                 </div>
                 <div className="performance-info">
                     <h3>{performance.title}</h3>

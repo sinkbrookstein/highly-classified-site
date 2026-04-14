@@ -20,7 +20,7 @@ function Navbar() {
         <>
             <nav className="navbar">
                 <Link className="navbar-logo" to="/">
-                    Highly Classified LLC
+                    Highly Classified
                 </Link>
 
                 {/* Hamburger */}

@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="site-footer">
             <a
-                href="https://www.instagram.com/highlyclassifiedllc/">
+                href="https://www.instagram.com/highlyclassifiedco/">
                 <FaInstagram size={40}/>
             </a>
             <div className="follow-us">

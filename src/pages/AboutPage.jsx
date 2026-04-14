@@ -11,7 +11,7 @@ const AboutPage = () => {
                 <div className="about-content">
                     <h2 className="text-3xl font-bold mb-4">About Us</h2>
                     <p className="mb-4 text-gray-700">
-                        Highly Classified LLC is the beloved brainchild of Coco Day and was founded in 2023. Her
+                        Highly Classified is the beloved brainchild of Coco Day and was founded in 2023. Her
                         mission: create
                         aerial artistry that is accessible within our diverse community. Highly Classified is Denver's
                         only equitable aerial troup. In each show we celebrate aerialists of any background and

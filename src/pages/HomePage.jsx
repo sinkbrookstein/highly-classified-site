@@ -66,7 +66,7 @@ function HireUsBlurb() {
     return <div className="services-section" id="services">
         <h2 className="section-title">Our Aerial Troupe</h2>
         <p className="services-description">
-            In addition to our captivating stage performances, Highly Classified LLC is available for custom events and
+            In addition to our captivating stage performances, Highly Classified is available for custom events and
             experiences.
             We have many performers with a wide variety of specialties - from aerial silks to contortion to invented
             apparatus to dance,
