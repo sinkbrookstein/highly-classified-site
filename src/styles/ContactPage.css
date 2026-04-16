@@ -2,7 +2,7 @@
 body {
   margin: 0;
   background-color: #181818;
-  font-family: 'Playfair Display', 'Georgia', serif;
+  font-family: 'Playfair Display', 'Helvetica', sans-serif;
   color: #ccc;
 }
 
@@ -50,7 +50,7 @@ form .input-box {
   background-color: #d4af37; /* gold */
   color: white;
   font-size: 1.2rem;
-  font-family: 'Playfair Display', 'Georgia', serif;
+  font-family: 'Playfair Display', 'Helvetica', sans-serif;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 0.5rem;

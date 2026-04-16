@@ -16,9 +16,9 @@ const PerformancesPage = () => {
 };
 
 function isLatestShowPast(showtimes) {
-    let shows = showtimes.filter(datetime => datetime !== "TBD");
+    let shows = showtimes.filter(s => s.showtime !== "TBD");
     const latest = new Date(
-        Math.max(...shows.map(date => new Date(date)))
+        Math.max(...shows.map(s => new Date(s.showtime)))
     );
 
     return latest < new Date();
@@ -55,7 +55,7 @@ function UpcomingPerformances() {
                     <p>{performance.details}</p>
                     <div className="showtimes-container">
                         <p className="showtimes">Show times: </p>
-                        {performance.showtimes.map(showtime => (<p>{getReadableDate(showtime)}</p>))}
+                        {performance.showtimes.map(s => (<p>{getReadableDate(s.showtime) + getDoorTime(s)}</p>))}
                     </div>
                     {performance.tickets && (
                         <a
@@ -73,6 +73,14 @@ function UpcomingPerformances() {
             </div>
         ))}
     </div>
+}
+
+function getDoorTime(showtime) {
+    if (showtime.doors === null) {
+        return "";
+    } else {
+        return " | Doors: " + showtime.doors;
+    }
 }
 
 function PastPerformances() {
