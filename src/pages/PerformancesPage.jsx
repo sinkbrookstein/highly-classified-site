@@ -24,6 +24,10 @@ function isLatestShowPast(showtimes) {
     return latest < new Date();
 }
 
+function getLatestShowtime(showtimes) {
+    return Math.max(...showtimes.map(s => new Date(s.showtime)));
+}
+
 function getReadableDate(date) {
     if (date === "TBD") {return date}
     const options = {
@@ -49,7 +53,7 @@ function UpcomingPerformances() {
                     <h4>{performance.description}</h4>
                     <p>{performance.details}</p>
                     <div className="showtimes-container">
-                        <p className="showtimes">Show times: </p>
+                        <h4 className="showtimes">Show times: </h4>
                         {performance.showtimes.map(s => (<p>{getReadableDate(s.showtime) + getDoorTime(s)}</p>))}
                     </div>
                     {performance.tickets && (
@@ -79,7 +83,7 @@ function getDoorTime(showtime) {
 }
 
 function PastPerformances() {
-    const past = data.performances.filter(p => isLatestShowPast(p.showtimes));
+    const past = data.performances.filter(p => isLatestShowPast(p.showtimes)).sort((a, b) => getLatestShowtime(b.showtimes) - getLatestShowtime(a.showtimes));
     return <div className="past-performances">
         {past.map(performance => (
             <div className="performance">

@@ -53,6 +53,14 @@ body {
     font-size: 1.05rem;
 }
 
+.showtimes-container p {
+    margin: 3px 0;
+}
+
+.showtimes-container h4 {
+    margin: 10px 0;
+}
+
 /* --- Mobile --- */
 @media (max-width: 768px) {
     .performance {
